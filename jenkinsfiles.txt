@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('clean') {
+            steps {
+                echo 'clean'
+                bat '''d:
+                cd D:\\postman\\temp
+                rmdir temp2
+                
+                '''
+            }
+        }
+        stage('clone') {
+            steps {
+                echo 'clean'
+            }
+        }
+    }
+}
